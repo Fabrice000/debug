@@ -57,7 +57,7 @@ const User = mongoose.model('User', userSchema);
 
 // Étape 8 : Route de base pour afficher le formulaire d'inscription
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'signup.html')); // Servir le fichier HTML d'inscription
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // Servir le fichier HTML d'inscription
 });
 app.get('/signup', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'signup.html')); // Servir le fichier HTML d'inscription
